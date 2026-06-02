@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/tovu-kava-lounge/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Libre+Franklin:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+
+<!-- SEO Meta Tags -->
+<title>Tovu Kava Lounge | Suva's Grounded Place to Slow Down</title>
+<meta name="description" content="Warm, organic landing page for Tovu Kava Lounge in downtown Suva, Fiji — featuring ritual storytelling, a refined kava menu, opening hours, and a booking enquiry form." />
+<meta property="og:title" content="Tovu Kava Lounge | Suva's Grounded Place to Slow Down" />
+<meta property="og:description" content="Warm, organic landing page for Tovu Kava Lounge in downtown Suva, Fiji — featuring ritual storytelling, a refined kava menu, opening hours, and a booking enquiry form." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tovu Kava Lounge | Suva's Grounded Place to Slow Down" />
+<meta name="twitter:description" content="Warm, organic landing page for Tovu Kava Lounge in downtown Suva, Fiji — featuring ritual storytelling, a refined kava menu, opening hours, and a booking enquiry form." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mpw0d0v1-hgrar";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4494');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='CGD6tDJfC';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased selection:bg-[#D99A2B] selection:text-[#221A14]">
+  <!-- ============================================================================ -->
+  <!-- NAVBAR: Brand mark and quick jump links                                       -->
+  <!-- Notes: Keep this simple; the page is single-screen friendly and anchored      -->
+  <!-- ============================================================================ -->
+  <nav data-section="navbar" class="relative z-20 px-4 py-5 sm:px-6 md:px-8 lg:px-12">
+    <div class="mx-auto flex max-w-7xl items-center justify-between">
+      <a href="#top" class="display-font text-2xl tracking-wide text-[#F2E8DA]">Tovu</a>
+      <div class="hidden gap-6 text-sm text-[var(--muted)] md:flex">
+        <a href="#story" class="transition hover:text-[#F2E8DA]">Ritual</a>
+        <a href="#menu" class="transition hover:text-[#F2E8DA]">Menu</a>
+        <a href="#contact" class="transition hover:text-[#F2E8DA]">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <!-- ============================================================================ -->
+    <!-- HERO: Off-center introduction with brand name and clear local promise        -->
+    <!-- Notes: Designed to feel warm, grounded, and a little asymmetric              -->
+    <!-- ============================================================================ -->
+    <section data-section="hero" class="grain relative overflow-hidden px-4 pb-14 pt-2 sm:px-6 md:px-8 lg:px-12">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.15fr_.85fr] lg:items-end">
+        <div class="reveal pt-8 lg:pt-14">
+          <p class="mb-4 text-xs uppercase tracking-[0.35em] text-[var(--accent)]">Downtown Suva, Fiji</p>
+          <h1 class="display-font max-w-4xl text-6xl leading-[0.92] tracking-[-0.04em] text-[#F2E8DA] sm:text-7xl md:text-8xl">
+            Tovu
+          </h1>
+          <h2 class="mt-5 max-w-2xl text-2xl font-medium leading-tight text-[#F2E8DA] sm:text-3xl">
+            Suva's grounded place to slow down
+          </h2>
+          <p class="mt-5 max-w-xl text-base leading-8 text-[var(--muted)] sm:text-lg">
+            Traditional kava served the way it should be, in a calm modern lounge a block from the seawall.
+            Come for the bowl, stay for the unhurried conversation.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded-full border border-[#D99A2B] bg-[#D99A2B] px-5 py-3 text-sm font-semibold text-[#221A14] transition hover:brightness-110">Book a table</a>
+            <a href="#menu" class="rounded-full border border-[rgba(242,232,218,.18)] px-5 py-3 text-sm font-semibold text-[#F2E8DA] transition hover:border-[rgba(242,232,218,.34)]">View the menu</a>
+          </div>
+        </div>
+
+        <div class="reveal relative lg:pb-6">
+          <div class="relative ml-auto w-full max-w-md overflow-hidden rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[rgba(255,255,255,.03)] p-6 shadow-2xl shadow-black/20">
+            <div class="absolute inset-x-0 top-0 h-px gold-line"></div>
+            <p class="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">Tonight's pace</p>
+            <div class="mt-6 space-y-5">
+              <div class="flex items-start justify-between gap-6 border-b border-[rgba(242,232,218,.12)] pb-4">
+                <div>
+                  <p class="font-medium text-[#F2E8DA]">Quiet first pour</p>
+                  <p class="mt-1 text-sm leading-6 text-[var(--muted)]">Soft light, low music, and a bowl made to settle the room.</p>
+                </div>
+                <span class="display-font text-2xl text-[#D99A2B]">01</span>
+              </div>
+              <div class="flex items-start justify-between gap-6 border-b border-[rgba(242,232,218,.12)] pb-4">
+                <div>
+                  <p class="font-medium text-[#F2E8DA]">Long tables, easy talk</p>
+                  <p class="mt-1 text-sm leading-6 text-[var(--muted)]">A social lounge with enough room to breathe, read, or stay a while.</p>
+                </div>
+                <span class="display-font text-2xl text-[#D99A2B]">02</span>
+              </div>
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <p class="font-medium text-[#F2E8DA]">From afternoon to late evening</p>
+                  <p class="mt-1 text-sm leading-6 text-[var(--muted)]">Open Tue–Sun, 4pm–11pm for after-work bowls and easy nights out.</p>
+                </div>
+                <span class="display-font text-2xl text-[#D99A2B]">03</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- STORY: What kava is, and the ritual behind it                                -->
+    <!-- Notes: Broken-grid layout intentionally keeps the composition human          -->
+    <!-- ============================================================================ -->
+    <section id="story" data-section="story" class="px-4 py-10 sm:px-6 md:px-8 lg:px-12">
+      <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1.05fr_.95fr]">
+        <article class="reveal rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[rgba(255,255,255,.03)] p-7 sm:p-8">
+          <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">What is kava</p>
+          <h2 class="display-font mt-4 text-3xl leading-tight text-[#F2E8DA] sm:text-4xl">
+            A drink for pausing, listening, and settling into the evening.
+          </h2>
+          <p class="mt-5 max-w-prose text-base leading-8 text-[var(--muted)]">
+            Kava is more than a pour. It is a shared ritual with a steady pace: the bowl arrives, the room quiets,
+            and conversation starts to move with a little more care. At Tovu, we keep that spirit intact while giving
+            it a clean, modern setting.
+          </p>
+          <p class="mt-4 max-w-prose text-base leading-8 text-[var(--muted)]">
+            The result is familiar and polished at once — earthy, calm, and made for Suva nights that deserve a softer tempo.
+          </p>
+        </article>
+
+        <div class="reveal grid gap-6 sm:grid-cols-[.9fr_1.1fr] lg:grid-cols-1">
+          <div class="rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[#2a2019] p-7">
+            <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">The ritual</p>
+            <h3 class="display-font mt-4 text-2xl text-[#F2E8DA]">Slow hands. Shared bowls. No rush.</h3>
+            <p class="mt-4 text-sm leading-7 text-[var(--muted)]">
+              We serve with a steady cadence: fresh prep, measured pours, and space for the table to talk through the night.
+            </p>
+          </div>
+          <div class="overflow-hidden rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[linear-gradient(180deg,rgba(217,154,43,.14),rgba(255,255,255,.02))] p-7">
+            <div class="flex h-full min-h-[280px] flex-col justify-between">
+              <div>
+                <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">House notes</p>
+                <p class="mt-4 text-base leading-8 text-[#F2E8DA]">
+                  Built for friends meeting after work, visitors wanting a proper first bowl, and locals who know that
+                  a good room can change the whole night.
+                </p>
+              </div>
+              <div class="mt-8 border-t border-[rgba(242,232,218,.16)] pt-4 text-sm leading-7 text-[var(--muted)]">
+                Earthy. Quiet. Welcoming. Right in the city, but never hurried.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- MENU: Refined list of signature offerings                                    -->
+    <!-- Notes: Styled as a menu list rather than equal-size cards                    -->
+    <!-- ============================================================================ -->
+    <section id="menu" data-section="menu" class="px-4 py-10 sm:px-6 md:px-8 lg:px-12">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal flex flex-col gap-3 lg:max-w-2xl">
+          <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">Menu</p>
+          <h2 class="display-font text-3xl leading-tight text-[#F2E8DA] sm:text-4xl">A short list, made to be ordered slowly.</h2>
+          <p class="text-base leading-8 text-[var(--muted)]">Each pour and plate is chosen to keep the mood grounded, fresh, and easy to share.</p>
+        </div>
+
+        <div class="reveal mt-8 overflow-hidden rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[rgba(255,255,255,.025)]">
+          <div class="grid lg:grid-cols-[1fr_auto]">
+            <div class="divide-y divide-[rgba(242,232,218,.12)]">
+              <div class="flex items-start justify-between gap-6 p-6 sm:p-7">
+                <div>
+                  <h3 class="display-font text-2xl text-[#F2E8DA]">Traditional Tanoa Bowl</h3>
+                  <p class="mt-2 max-w-xl text-sm leading-7 text-[var(--muted)]">Classic, smooth, and served with the proper pace for the first round.</p>
+                </div>
+                <span class="text-sm uppercase tracking-[0.25em] text-[var(--accent)]">Signature</span>
+              </div>
+              <div class="flex items-start justify-between gap-6 p-6 sm:p-7">
+                <div>
+                  <h3 class="display-font text-2xl text-[#F2E8DA]">Honey-Ginger Kava</h3>
+                  <p class="mt-2 max-w-xl text-sm leading-7 text-[var(--muted)]">A softer finish with warmth up front and a gentle, rounded edge.</p>
+                </div>
+                <span class="text-sm uppercase tracking-[0.25em] text-[var(--accent)]">House pour</span>
+              </div>
+              <div class="flex items-start justify-between gap-6 p-6 sm:p-7">
+                <div>
+                  <h3 class="display-font text-2xl text-[#F2E8DA]">Cold Brew Kava</h3>
+                  <p class="mt-2 max-w-xl text-sm leading-7 text-[var(--muted)]">Chilled, clean, and ideal for late afternoon arrivals.</p>
+                </div>
+                <span class="text-sm uppercase tracking-[0.25em] text-[var(--accent)]">Chilled</span>
+              </div>
+              <div class="flex items-start justify-between gap-6 p-6 sm:p-7">
+                <div>
+                  <h3 class="display-font text-2xl text-[#F2E8DA]">Island Grazing Board</h3>
+                  <p class="mt-2 max-w-xl text-sm leading-7 text-[var(--muted)]">Simple bites for sharing: fruit, crackers, cheeses, and local savoury touches.</p>
+                </div>
+                <span class="text-sm uppercase tracking-[0.25em] text-[var(--accent)]">Share</span>
+              </div>
+            </div>
+            <aside class="border-t border-[rgba(242,232,218,.12)] bg-[#2b2119] p-6 sm:p-7 lg:border-l lg:border-t-0">
+              <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">Good to know</p>
+              <ul class="mt-4 space-y-3 text-sm leading-7 text-[var(--muted)]">
+                <li>Best enjoyed with a little time between bowls.</li>
+                <li>Ask the team for a gentler or stronger pour.</li>
+                <li>Board items change with what feels fresh that week.</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- ATMOSPHERE + HOURS: Practical visit details                                  -->
+    <!-- Notes: Keep the tone warm and concise, with no corporate filler              -->
+    <!-- ============================================================================ -->
+    <section data-section="atmosphere-hours" class="px-4 py-10 sm:px-6 md:px-8 lg:px-12">
+      <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[.88fr_1.12fr]">
+        <div class="reveal rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[rgba(255,255,255,.03)] p-7 sm:p-8">
+          <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">Atmosphere</p>
+          <h2 class="display-font mt-4 text-3xl text-[#F2E8DA]">Low light, warm timber, and room to exhale.</h2>
+          <p class="mt-5 text-base leading-8 text-[var(--muted)]">
+            Tovu is designed for easy conversation — not noise, not rush. The room feels intimate without being closed in,
+            with a palette that stays close to clay, bark, and candlelight.
+          </p>
+        </div>
+
+        <div class="reveal rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[#2a2019] p-7 sm:p-8">
+          <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">Hours</p>
+          <div class="mt-4 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-[rgba(242,232,218,.10)] p-5">
+              <p class="text-sm uppercase tracking-[0.2em] text-[var(--accent)]">Open</p>
+              <p class="mt-2 text-xl font-semibold text-[#F2E8DA]">Tue–Sun</p>
+              <p class="mt-1 text-sm leading-7 text-[var(--muted)]">4pm–11pm</p>
+            </div>
+            <div class="rounded-2xl border border-[rgba(242,232,218,.10)] p-5">
+              <p class="text-sm uppercase tracking-[0.2em] text-[var(--accent)]">Closed</p>
+              <p class="mt-2 text-xl font-semibold text-[#F2E8DA]">Monday</p>
+              <p class="mt-1 text-sm leading-7 text-[var(--muted)]">Rest, prep, and replenish.</p>
+            </div>
+          </div>
+          <div class="mt-5 rounded-2xl border border-[rgba(242,232,218,.10)] p-5 text-sm leading-7 text-[var(--muted)]">
+            Walk-ins are welcome when space allows. For groups, send a note below so we can hold a table.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- CONTACT: Address, phone, email, and booking enquiry form                     -->
+    <!-- Notes: Form is simple and direct; it stays within the site for easy editing   -->
+    <!-- ============================================================================ -->
+    <section id="contact" data-section="contact" class="px-4 py-10 sm:px-6 md:px-8 lg:px-12">
+      <div class="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[.9fr_1.1fr]">
+        <div class="reveal rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[rgba(255,255,255,.03)] p-7 sm:p-8">
+          <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">Visit</p>
+          <h2 class="display-font mt-4 text-3xl text-[#F2E8DA]">Find us in the city, close to the water.</h2>
+          <div class="mt-6 space-y-4 text-[var(--muted)]">
+            <p class="leading-7"><span class="text-[#F2E8DA]">Address:</span> 14 Stinson Parade Rd, Suva</p>
+            <p class="leading-7"><span class="text-[#F2E8DA]">Phone:</span> <a href="tel:+6799990000" class="transition hover:text-[#F2E8DA]">+679 999 0000</a></p>
+            <p class="leading-7"><span class="text-[#F2E8DA]">Email:</span> <a href="mailto:bula@tovukava.fj" class="transition hover:text-[#F2E8DA]">bula@tovukava.fj</a></p>
+          </div>
+        </div>
+
+        <form id="bookingForm" class="reveal rounded-[2rem] border border-[rgba(242,232,218,.12)] bg-[#2a2019] p-7 sm:p-8">
+          <p class="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">Booking enquiry</p>
+          <h3 class="display-font mt-4 text-3xl text-[#F2E8DA]">Send a note for table bookings and group visits.</h3>
+          <div class="mt-6 grid gap-4">
+            <label class="grid gap-2">
+              <span class="text-sm text-[var(--muted)]">Name</span>
+              <input type="text" name="name" required class="w-full rounded-2xl px-4 py-3" placeholder="Your name">
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm text-[var(--muted)]">Email</span>
+              <input type="email" name="email" required class="w-full rounded-2xl px-4 py-3" placeholder="you@example.com">
+            </label>
+            <label class="grid gap-2">
+              <span class="text-sm text-[var(--muted)]">Message</span>
+              <textarea name="message" rows="5" required class="w-full rounded-2xl px-4 py-3" placeholder="Date, time, number of guests, or anything the team should know."></textarea>
+            </label>
+            <button type="submit" class="rounded-full bg-[#D99A2B] px-5 py-3 text-sm font-semibold text-[#221A14] transition hover:brightness-110">
+              Send enquiry
+            </button>
+            <p id="formNote" class="text-sm leading-6 text-[var(--muted)]">We'll review it and reply as soon as we can.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Short closing note and copyright                                     -->
+  <!-- Notes: Keep the finish calm and minimal                                      -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="px-4 py-8 sm:px-6 md:px-8 lg:px-12">
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 border-t border-[rgba(242,232,218,.12)] pt-6 text-sm text-[var(--muted)] sm:flex-row sm:items-center sm:justify-between">
+      <p>© 2026 Tovu Kava Lounge. Suva, Fiji.</p>
+      <p class="tracking-wide">A place to sit, sip, and stay awhile.</p>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
