@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astaworkmail-tech.github.io/tovu-kava-lounge/sitemap.xml
